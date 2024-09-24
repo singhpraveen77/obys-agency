@@ -1,4 +1,9 @@
-let heads=document.querySelectorAll(".line h1");
+let tl = gsap.timeline();
+let tl2 = gsap.timeline();
+
+
+function loader(){
+    let heads=document.querySelectorAll(".line h1");
 let loader=document.querySelector(".loader");
 let tl=gsap.timeline();
 let runner1=document.getElementById("runner1");
@@ -67,3 +72,63 @@ tl.to(".loader",{
 
 
 
+
+}
+loader();
+
+function cursor(){
+    document.addEventListener("mousemove",function(ele){
+        console.log(ele.x,ele.y);
+        
+        gsap.to("#cursor",{
+            
+            x:ele.x,
+            y:ele.y
+        })
+    })
+    
+    Shery.makeMagnet(".navp2 span");
+    
+}
+cursor();
+
+function page1(){
+tl2.from(".nav-p1 span",{
+    y:-100,
+    duration:.6,
+    stagger:.2,
+    delay:4.3,
+    opacity:0,
+    ease:"power2.out"
+})
+
+tl2.from(".navp2 span",{
+    y:-100,
+    duration:.6,
+    stagger:.2,
+    // delay:4.3,
+    opacity:0,
+    ease:"power2.out"
+})
+
+
+tl2.from(".texts h1 ",{
+    y:150,
+    // opacity:0,
+    duration:.6,
+    stagger:.2,
+    delay:.3,
+    
+    
+    ease:"power2.out"
+
+})
+
+gsap.from(".content-one h4",{
+        y:150,
+        duration:.6,
+        delay:6.5,
+    ease:"power2.out"
+})
+}
+page1();
