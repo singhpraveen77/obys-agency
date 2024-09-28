@@ -1,17 +1,12 @@
-
 *{
     margin: 0;
-    padding:0%;
+    padding:0;
     box-sizing: border-box;
     color: #fff;
+    font-family: Arial, sans-serif;
 
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-    
-}
 
 #cursor{
     height: 3.5vh;
@@ -49,7 +44,6 @@ body{
 
 .lines {
     height:fit-content;
-    /* color: rgb(6, 115, 211); */
     padding: 0 1rem;
     overflow: hidden;
     font-family: 'Plain light';
@@ -59,13 +53,10 @@ body{
 
 #line1{
     display: flex;
-    /* justify-content: center;  */
-     /* background-color: red; */
+    
     gap: 7px ;
     height: fit-content;
-    /* position: relative; */
-    /* font-family: 'plain light'; */
-
+    
 }
 
 #line3{
@@ -108,16 +99,22 @@ margin-left: 5vw;
 
 .page1{
     height: 100vh;
-    width: 100vw;
-    padding: 3vw 5vw;
+    width: 100%;
+    padding-top: 3vw ;
+    
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
 
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    /* gap: 45vw; */
     font-size: 1.2rem;
     height: 10vw;
+    width: 95%;
     /* background-color: red; */
 
 
@@ -131,7 +128,6 @@ margin-left: 5vw;
 .logo{
     display: flex;
     gap: 4rem;
-    align-items: s;
     
 }
 .nav-p1{
@@ -162,14 +158,14 @@ margin-left: 5vw;
     width: 83vw;
     height: 70vh;
     padding-top: 1vh;
-    /* margin-left: 1vw; */
+    box-sizing: border-box;
+
 
 }
 
 .content-one{
     padding-top: 1vh;
     overflow: hidden;
-    /* background-color: red; */
     height: fit-content;
 }
 .content-text{
@@ -192,4 +188,193 @@ margin-left: 5vw;
     color: transparent;
 }
 
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(35, 102, 45);
+    box-sizing: border-box;
+}
+
+.video-container{
+    height: 70vh;
+    width: 75%;
+    position: relative;
+    left: 25%;
+    top: 20%;
+    box-sizing: border-box;
+}
+.video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.player{
+   height: 6vw;
+   width: 6vw;
+   border-radius: 50%;
+   position: absolute;
+   top: -7%;
+   right: 10%;
+   z-index: 9999;
+   background-color: #ffa63d;
+}
+
+.player i{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(65, 64, 64);
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    padding-top: 20vh;
+    margin-bottom:200vh;
+}
+
+.page4-content{ 
+    min-height: 270vh;
+    display: flex;
+    /* flex-direction: column; */
+    width: 80%;
+    left: 15%;
+    position: relative;
+    gap: 6vw;
+}
+
+#page4-t{
+    width: 89%;
+    /* background-color: blue; */
+    /* font-family: Arial, sans-serif; */
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    box-sizing: border-box;
+    /* padding: 0 1vw; */
+    padding-bottom: 9vh;
+    border-bottom: 2px solid white;
+    
+}
+#num3{
+    height: 7vh;
+    width: 10vh;
+    /* background-color: blue; */
+    font-size: 3.5vw;
+    font-family: cursive;
+    text-transform: uppercase;
+    /* font-weight: 400; */
+     
+
+}
+
+.page4-para{
+    margin-top: 8vh;
+    /* background-color: rgb(0, 136, 255); */
+    width: 60%;
+    font-size: 2.5vw;
+    line-height: 2.2;
+    /* font-weight: 100; */
+    word-wrap: break-word;
+    line-height: 1.1;
+    font-family: 'Times New Roman', Times, serif;
+}
+   
+
+.page4-img-container{
+    display: flex;
+    gap: 2vw;
+    margin-top: 10vh;
+    min-height: 80vh;
+    min-width: 60vh;
+    gap: 2vw;
+}
+
+.page4-img {
+    height: 90vh;
+    width: 35vw;
+    background-image: url("https://obys.agency/wp-content/uploads/2020/07/content-image01.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.page4-img-text{
+    width:20%;
+    font-size: 1vw;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+.blue-box{
+    display: flex;
+    min-height: 90vh;
+    min-width: 35vw;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 1vh;
+}
+
+.blue-text-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #3f7df4;
+    /* gap: 1vw; */
+    height:90%;
+    width: 85%;
+    padding: 4vh 4vh;
+    padding-bottom: 7vh;
+
+}
+
+.blue-boxes{
+    border-bottom: 1px solid white;
+    display: flex;
+    
+    /* gap: 1vw; */
+    height: 13vh;
+    width: 95%;
+}
+
+.blue-left{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    font-size: .7vw;
+    align-items: center;
+    font-weight: 100;
+}
+
+.blue-right{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+}
+
+.linne{
+    bottom: 20vh;
+    width: 78%;
+    border: 1px solid #fff;
+    position: absolute;
+    /* margin-bottom: 10vh; */
+
+
+}
 

@@ -78,7 +78,6 @@ loader();
 
 function cursor(){
     document.addEventListener("mousemove",function(ele){
-        console.log(ele.x,ele.y);
         
         gsap.to("#cursor",{
             
